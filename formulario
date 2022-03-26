@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="widthedevice-width, initial-scale=1.0">
+    <title>Pasteleria venus</title>
+</head>
+<body style="background-color:rgb(202, 226, 171)"></body>
+
+<!-- Headings -->
+<h1><img src= "" alt="pasteleria nenus.jpg" width="40px"> ¡Bienvenido!</h1>
+<h2>¡Tenemos el pastel perfecto para ti!</h2>
+<h3>A continuación, llena el siguiente formulario:</h3>
+
+<form action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre(s):</label>
+    <input type="text" id="nombre" name="nombre" style="width: 300px;"><br><br>
+    <label for="apellido">Apellido(s):</label>
+    <input type="text" id="apellido" name="apellido" style="width: 300px;"><br><br>
+    <label for="tel1">Teléfono:</label>
+    <input type="tel" id="tel1" name="tel1" maxlength="10" style="width: 200px;"><br><br>
+    <label for="correo1">Correo electrónico:</label>
+    <input type="email" id="correo1" name="correo1" style="width: 300px;"><br>
+    
+    <h3>Sabores:</h3>
+    <p>Podemos generar combinaciones de hasta dos sabores. Elige hasta dos sabores:</p>
+    <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+    <label for="sabor1">Vainilla.....$150</label><br>
+    <input type="checkbox" id="sabor2" name="sabor2" value="Fresa">
+    <label for="sabor2">Fresa.....$150</label><br>
+    <input type="checkbox" id="sabor3" name="sabor3" value="Chocolate">
+    <label for="sabor3">Chocolate.....$150</label><br>
+    <input type="checkbox" id="sabor4" name="sabor4" value="Frutos Rojos">
+    <label for="sabor4">Frutos Rojos.....$150</label><br>
+    <input type="checkbox" id="sabor5" name="sabor5" value="Blueberry">
+    <label for="sabor5">Blueberry.....$150</label><br>
+
+    <h3>Adornos:</h3>
+    <p>Podemos generar todas las combinaciones que desees:</p>
+    <input type="checkbox" id="adorno1" name="adorno1" value="Funfetti">
+    <label for="adorno1">Funfetti.....$30</label><br>
+    <input type="checkbox" id="adorno2" name="adorno2" value="Decoraciones florales">
+    <label for="adorno2">Decoraciones florales.....$30</label><br>
+    <input type="checkbox" id="adorno3" name="adorno3" value="Decoraciones 3D">
+    <label for="adorno3">Decoraciones 3D.....$30</label><br>
+    <input type="checkbox" id="adorno4" name="adorno4" value="Fondant">
+    <label for="adorno4">Fondant.....$30</label><br>
+    <input type="checkbox" id="adorno5" name="adorno5" value="Salsa de caramelo">
+    <label for="adorno5">Salsa de caramelo.....$30</label><br>
+   
+   <h3>Ocasión:</h3> 
+   <label for="ocasión">Ocasión:</label><br>
+   <input list="ocasión:">
+    <datalist id="ocasión:">
+        <option value="Cumpleaños">
+        <option value="Bautizo">
+        <option value="Primera Comunión">
+        <option value="Quince Años">
+        <option value="Boda">
+        <option value="Otro">
+    </datalist>
+
+    <label for="personas">Número de personas:</label>
+    <input type="text" id="personas" name="personas" style="width: 120px;">
+
+    <h3>Fecha de entrega</h3>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br><br>
+    
+    <h3>Descripción</h3>
+    <p>Por favor, detalla las características del pastel. Incluye toda la información que consideres relevante:</p>
+    <input type="text" id="descripción" name="descripción" style="width: 350px;"><br><br>
+
+    <input type="submit" value="Submit" style="width:100px; height:30px;color: white; background-color: #663300">
+    <input type="reset" style="width:100px; height:30px;color: white; background-color: #663300">
+</form>
+
+<br><br>
+</body>
+</html> 
